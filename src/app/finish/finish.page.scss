@@ -72,8 +72,8 @@
     
   }
   #headlogo {
-    max-width: 100px;
-    max-height: 40vh;
+    max-width: 50px;
+    max-height: 100px;
   }
 
 
@@ -104,3 +104,10 @@
     height: 5em;
 
   }
+
+  a:link,  a:active,  a:visited,  a:hover   {
+    text-decoration: inherit;
+    color: inherit;
+    
+  }
+  

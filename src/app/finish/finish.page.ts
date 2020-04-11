@@ -27,6 +27,9 @@ export class FinishPage implements OnInit {
 
   spinner=true;
 
+  share=true;
+  linkedinlink="";
+
 
   constructor(public mydata: DataService, private router: Router, private http: HttpClient) {
 
@@ -36,6 +39,14 @@ export class FinishPage implements OnInit {
     this.mytime_sec = Math.trunc((this.mydata.timeend - this.mydata.timestart) / 1000 - this.mytime_min * 60);
 
     if (this.mydata.allvariables.with_db) this.sendInfoToDB();
+
+    if(isNaN(this.mytime_min) || isNaN(this.mytime_sec)) {
+      //Not sharing
+    }
+    else {
+      this.share=true;
+      this.linkedinlink="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//cesarmiguel85.github.io/EggHunt2020/&title=Virtual%20Easter%20Egg%20Hunt%202020&summary=Take%20a%20short%20trip%20around%20the%20world%20with%20this%20virtual%20Easter%20egg%20hunt!%0AI%20just%20did%20it%20and%20got%20a%20score%20of%20"+this.mytime_min+"min.%20"+this.mytime_sec+"sec.";
+    }
 
   }
 
@@ -136,6 +147,10 @@ export class FinishPage implements OnInit {
 
   ionViewDidEnter() {
 
+  }
+
+  shareLinkedIn(){
+    
   }
 
 

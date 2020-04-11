@@ -218,7 +218,7 @@ export const messages_fr = {
   //PAGE D'ACCUEIL
   home_title: "Bienvenue à la chasse aux oeufs de Pâques",
   home_subtitle: "",
-  home_desc: "Ce n'est pas parce que nous sommes confinés que nous ne pouvons pas maintenir l'esprit des activités!\n En prenant plusieurs idées d'ici et de là, profitant d'un side-project personnel avec mon collègue Andres, je vous porpose une chasse aux oeufs de Pâques en mode 'évasion'. J'ai rassemblé les quelques photos 360 de mes derniers voyages (ce ne sont pas forcément celles que j'aurais prises pour ceci, mais je n'avais jamais pensé faire ceci quand je les avais prises). J'ai caché des oeufs dans les images qu'il faudra retrouver.\n\nUne occasion pour nviter à l'évasion et partager avec vous des endroit magnifiques de façon ludique 😉\n(Un merci spécial à Manu qui a pris beaucoup d'entre elles!)",
+  home_desc: "Ce n'est pas parce que nous sommes confinés que nous ne pouvons pas maintenir l'esprit des activités!\n En prenant plusieurs idées d'ici et de là, profitant d'un side-project personnel avec mon collègue Andres, je vous propose une chasse aux oeufs de Pâques autour du monde en mode 'évasion'. J'ai rassemblé les quelques photos 360 de mes derniers voyages (elles pourraient être plus adaptées pour ceci, mais je n'avais jamais pensé faire ce jeu quand je les avais prises). J'ai caché des oeufs dans les images qu'il faudra retrouver.\n\nUne occasion pour partager avec vous des endroits magnifiques de façon ludique 😉\n\nCesar MIGUEL\n(Un merci spécial à Manu qui a pris beaucoup d'entre elles!)",
   //Si usage de Base de données, consentement
   home_disclaimer: "",
   home_type: "",
@@ -244,15 +244,17 @@ export const messages_fr = {
   //PAGE DE FIN DU JEU
   finish_title: "FÉLICITATIONS!",
   finish_card_title: "Vous avez trouvé tous les oeufs!",
-  finish_card_content: "J'espère que vous avez apprécié ce jeu et il vous a permis de vous évader ne serait-ce que quelques minutes!\n\nPeut-être vous avez des idées pour les prochaines vacances? 😉",
+  finish_card_content: "J'espère que vous avez apprécié ce jeu et il vous a permis de vous évader ne serait-ce que quelques minutes!\n\nPeut-être vous avez des idées pour les prochaines vacances? 😉\n\nCesar MIGUEL",
   finish_cardtime_title: "Voici votre score",
   finish_cardtime_content: "Vous avez terminé ce jeu en ",
   finish_ranking: "",
   finish_cardtime_saving:"",
 
   finish_share_title: "Partagez votre score sur LinkedIn! 👍🏻",
-  finish_share_text1: "",
+  finish_share_text1: "Partager sur LinkedIn",
   finish_share_text2: "",
+  finish_quit: "Quitter",
+
 
   ranking_title: "",
   ranking_card_title: "",
@@ -266,7 +268,7 @@ export const messages_en = {
   //PAGE D'ACCUEIL
   home_title: "Welcome to the Easter Egg Hunt",
   home_subtitle: "",
-  home_desc: "The confinement should not prevent us from enjoying the essence of some pleasures!\n Borrowing some ideas from here and there, and thanks to a side-project with my colleague Andres, I present to you a virtual Easter Egg Hunt around travel and mind 'evasion'. I have gathered the 360º images from my past travels (they are not the best pictures for this, but I never expected I would use them for this purpose!). I hid some Easter Eggs in the image that you will have to find.\n\n This is an occasion to daydream and share with you some amazing places in a playful way 😉\n(Special thanks to Manu who took most of these pictures!)",
+  home_desc: "The confinement should not prevent us from enjoying the essence of some pleasures!\n Borrowing some ideas from here and there, and thanks to a side-project with my colleague Andres, I present to you a virtual Easter Egg Hunt around travel and mind 'evasion'. I have gathered the 360º images from my past travels (they are not the best pictures for this, but I never expected I would use them for this purpose!). I hid some Easter Eggs in the image that you will have to find.\n\n This is an occasion to daydream and share with you some amazing places in a playful way 😉\n\nCesar MIGUEL\n(Special thanks to Manu who took most of these pictures!)",
   //Si usage de Base de données, consentement
   home_disclaimer: "",
   home_type: "",
@@ -292,15 +294,16 @@ export const messages_en = {
   //PAGE DE FIN DU JEU
   finish_title: "CONGRATULATIONS!",
   finish_card_title: "You found all the hidden Easter eggs!",
-  finish_card_content: "I hope you liked this little game and I wish it took your mind off the confinementor a second. \n\n Maybe you found your next holiday destination ? 😉",
+  finish_card_content: "I hope you liked this little game and I wish it took your mind off the confinementor a second. \n\n Maybe you found your next holiday destination ? 😉\n\nCesar MIGUEL",
   finish_cardtime_title: "This is your score",
   finish_cardtime_content: "You finished the game in ",
   finish_ranking: "",
   finish_cardtime_saving:"",
 
   finish_share_title: "Share your score and the game on LinkedIn! 👍🏻",
-  finish_share_text1: "",
+  finish_share_text1: "Share on LinkedIn",
   finish_share_text2: "",
+  finish_quit: "Quit",
 
   ranking_title: "",
   ranking_card_title: "",

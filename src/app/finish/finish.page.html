@@ -6,7 +6,7 @@
     <ion-title>{{ mydata.allmessages.finish_title }}</ion-title>
     <ion-buttons slot="end" (click)="exitPage()">
       <ion-button>
-        Quitter
+        {{ mydata.allmessages.finish_quit }}
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -50,6 +50,8 @@
         <ion-card-content>
           <p class="score">{{ mydata.allmessages.finish_cardtime_content }} {{mytime_min}} min. {{mytime_sec}} sec.</p>
           <p class="saving"*ngIf="spinner && mydata.allvariables.with_db" ><ion-spinner name="bubbles"></ion-spinner> <span>{{ mydata.allmessages.finish_cardtime_saving }}</span></p>
+          <p class="saving" *ngIf="share"><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//cesarmiguel85.github.io/EggHunt2020/&title=Virtual%20Easter%20Egg%20Hunt%202020&summary=Take%20a%20short%20trip%20around%20the%20world%20with%20this%20virtual%20Easter%20egg%20hunt!%0AI%20just%20did%20it%20and%20got%20a%20score%20of%20min.%20sec..&source=https%3A//cesarmiguel85.github.io/EggHunt2020/"><ion-button>{{mydata.allmessages.finish_share_text1}} <ion-icon name="logo-linkedin"></ion-icon></ion-button></a></p>
+        
         </ion-card-content>
       </ion-card>
 
