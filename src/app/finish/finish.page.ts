@@ -15,6 +15,9 @@ import {
   timeout
 } from 'rxjs/operators';
 
+import { GoogleAnalyticsService } from './../google-analytics.service';
+
+
 @Component({
   selector: 'app-finish',
   templateUrl: './finish.page.html',
@@ -31,7 +34,7 @@ export class FinishPage implements OnInit {
   linkedinlink="";
 
 
-  constructor(public mydata: DataService, private router: Router, private http: HttpClient) {
+  constructor(public mydata: DataService, private router: Router, private http: HttpClient,private googleAnalyticsService: GoogleAnalyticsService) {
 
     this.mydata.timeend = new Date();
 
@@ -146,11 +149,12 @@ export class FinishPage implements OnInit {
   }
 
   ionViewDidEnter() {
+    this.googleAnalyticsService.trackPagesHandler('finish');
 
   }
 
   shareLinkedIn(){
-    
+
   }
 
 

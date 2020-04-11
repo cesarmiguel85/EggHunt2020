@@ -8,6 +8,8 @@ import { of } from 'rxjs/observable/of';
 
 import * as $ from 'jquery';
 
+import { GoogleAnalyticsService } from './google-analytics.service';
+
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +33,7 @@ export class DataService {
 
   myeggs = [];
 
-  constructor(private router: Router, public toastController: ToastController,public http: HttpClient) { 
+  constructor(private router: Router, public toastController: ToastController,public http: HttpClient, private googleAnalyticsService: GoogleAnalyticsService) { 
     
   }
 
@@ -76,6 +78,9 @@ export class DataService {
     if (rem==0) {
       this.finishedArea=true;
       this.presentToast(this.allmessages.areas_checkdone);
+
+      this.googleAnalyticsService.trackEventHandler('finished', this.alldata[areanum].area, 'VR_zone');
+
       setTimeout(()=>{
         this.router.navigate(['/areas']);
       },2000);

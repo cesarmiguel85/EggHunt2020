@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from './../data.service';
 import { Router, NavigationExtras } from '@angular/router';
 
+import { GoogleAnalyticsService } from './../google-analytics.service';
+
 @Component({
   selector: 'app-areas',
   templateUrl: './areas.page.html',
@@ -9,7 +11,7 @@ import { Router, NavigationExtras } from '@angular/router';
 })
 export class AreasPage implements OnInit {
 
-  constructor(private router: Router, public mydata: DataService) {
+  constructor(private router: Router, public mydata: DataService,private googleAnalyticsService: GoogleAnalyticsService) {
 
   }
   GoToArea(num) {
@@ -18,6 +20,9 @@ export class AreasPage implements OnInit {
         area: num
       }
     };
+
+
+    this.googleAnalyticsService.trackEventHandler('visit', this.mydata.alldata[num].area, 'VR_zone');
 
     switch(this.mydata.alldata[num].type) { 
       case 'image360': { 
@@ -48,6 +53,11 @@ export class AreasPage implements OnInit {
   quitGame(){
     this.router.navigate(['/home']);
     this.mydata.email="";
+  }
+
+  ionViewDidEnter() {
+    this.googleAnalyticsService.trackPagesHandler('areas');
+
   }
   
 }
