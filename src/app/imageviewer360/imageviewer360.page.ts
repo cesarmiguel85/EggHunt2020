@@ -12,7 +12,7 @@ declare var PhotoSphereViewer;
 })
 export class Imageviewer360Page implements OnInit {
 
-  alertclick=true;
+  alertclick=false;
 
   pictures = [];
   area: number;

@@ -228,7 +228,7 @@ export const messages_fr = {
   areas_title: "Chasse aux Oeufs de Pâques",
   //Carte de description du jeu
   areas_card_title: "C'est parti!",
-  areas_card_desc: "Explorez chaque endroit puis cliquez sur les œufs pour les attraper dès que vous les verrez. \nIls sont colorés et pas trop compliqués à trouver, promis 😉",
+  areas_card_desc: "Explorez chaque endroit puis cliquez sur les œufs pour les attraper dès que vous les verrez. \nIls sont colorés et pas trop compliqués à trouver, promis 😉(cherchez par terre ou entre les mains des gens, comme dans la vraie vie!)",
   //Message quand tous les oeufs sont trouvés
   areas_checkdone: "Vous avez trouvé tous les oeufs de cet endroit, félicitations!",
   //Message oeufs restants
@@ -278,7 +278,7 @@ export const messages_en = {
   areas_title: "Easter Egg Hunt",
   //Carte de description du jeu
   areas_card_title: "Let's go!",
-  areas_card_desc: "Explore the places and look for the hidden eggs. Once you find them, click on them to catch them. \n They are colorful and easy to find, I promise 😉",
+  areas_card_desc: "Explore the places and look for the hidden eggs. Once you find them, click on them to catch them. \n They are colorful and easy to find, I promise 😉 (look on the ground or in people's hands, like real life!)",
   //Message quand tous les oeufs sont trouvés
   areas_checkdone: "You found all the eggs in the area, congratulations!",
   //Message oeufs restants
